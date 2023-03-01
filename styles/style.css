@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root { /*cria variáveis para serem utilizadas posteriormente*/
+    --cor-fundo: #20262E;
+    --cor-texto: #E9E8E8;
+    --cor-destaque: #CD5888;
+    --cor-hover: #913175;
+}
+
+* { /* o * seleciona todos os itens da página para resetar */
+    margin: 0; /* parte externa da borda */
+    padding: 0; /* parte interna da borda, ao redor do conteúdo */
+}
+
+body {
+    /* height: 100vh; padrão de 100% da tela do dispositivo que está usando */
+    box-sizing: border-box; /*mantém todos os itens filhos dentro do elemento pai */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+.tituloDestaque {
+    color:var(--cor-destaque);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+    display: flex;
+    gap: 40px;
+}
+
+.menu_link1 {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+.menu_link2 {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    padding: 0px 00px 0px 40px;
+}
+
+.menu_link3 {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    padding: 0px 0px 0px 40px;
+}
+
+.apresentacao {
+    display: flex; /* deixa os elementos um do lado do outro dentro do elemento pai */ /* NÃO FUNCIONOU */
+    vertical-align:top ; /*alinha conforme o maior item dentro dos elementos*/
+    justify-content: space-between; /*cria um espaço entre os elementos  NÃO FUNCIONOU */
+    padding: 5% 10%;
+    gap: 82px; /* espaço entre os itens contidos no elemento pai */
+}
+
+.apresentacao_conteudo {
+    width: 50%; /* largura */
+    display: flex;
+    flex-direction: column; /*direção do alinhamento dos itens */
+    gap: 20px
+}
+
+.apresentacao_titulo {
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao_texto {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    font-size: 1.25rem;
+}
+
+.apresentacao_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao_subtitulo1 {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.apresentacao_link1 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 16px;
+    padding: 21.5px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img_insta {
+    width: 24px;
+    height: 24px;
+}
+
+.img_foto {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.apresentacao_link2 {
+    /* background-color: #2F7DEB; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 16px;
+    padding: 21.5px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+.apresentacao_link1:hover {
+    background-color: var(--cor-hover);
+    color: black;
+}
+
+.apresentacao_link2:hover {
+    background-color: var(--cor-hover);
+    color: black;
+}
+
+.rodape {
+    color: black;
+    background-color: var(--cor-destaque);
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 24px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+@media (max-width: 480px) {    /*media serve para modificar o layout a partir de alguma especificação, nesse caso o max-width da tela */
+    .apresentacao {
+        flex-direction: column-reverse; /*muda o layout e a ordem dos itens para ficar a imagem acima do texto*/
+    }
+    .cabecalho {
+        padding: 10%;
+    }
+    .apresentacao_conteudo {
+        width: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .cabecalho {
+        padding: 5%;
+        justify-content: right;
+    }
+}

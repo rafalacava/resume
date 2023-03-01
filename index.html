@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--ajuda a separar as versões de HTML, evitando bugs de versões anteriores-->
+<html lang="pt-br"> <!--língua do documento-->
+<head> <!--parte invisível do código, serve apenas para dar nome aos elementos que vão compor a página-->
+    <meta charset="UTF-8"> <!--diz qual dicionário de caracteres utiliza-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--pra quem utiliza o microsoft edge, ajuda a não quebrar o código-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--relaciona a escala do dispositivo utilizado para abrir a página e reajustar os tamanhos-->
+    <title>Portfólio</title> <!--aqui fica o nome do arquivo, e não o título real da página-->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body> <!--corpo visível da página-->
+    <header class="cabecalho">
+        <nav class="menu">
+            <a class="menu_link1" href="index.html">Home</a>
+            <a class="menu_link2" href="about.html">Sobre mim</a>
+            <a class="menu_link3" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <h1 class="apresentacao_titulo"> Eleve seu negócio digital a outro nível <strong class="tituloDestaque">com um Front-end de qualidade!</strong> </h1>
+            <p class="apresentacao_texto"> Olá! Sou Rafaella Lacava, desenvolvedora Front-end com especialidade em HTML e CSS. Vamos conversar? </p>
+            <div class="apresentacao_links">
+                <h2 class="apresentacao_subtitulo">Acesse minhas redes</h2>
+                <a class="apresentacao_link1" href="https://www.instagram.com/rafalacava/" target="_blank"> 
+                    <img src="./assets/logo insta.png" class="img_insta">
+                    Instagram </a> <!--target blank serve para levar o usuário para outra aba do navegador-->
+                <a class="apresentacao_link2" href="https://www.linkedin.com/in/rafaella-lacava/" target="_blank"> 
+                    <img src="./assets/Logo linkedin.png">
+                    LinkedIn </a>
+            </div>
+        </section>
+        <div class="apresentacao_conteudo">
+            <img src="./assets/Foto.jpeg" alt="Foto de Rafaella" class="img_foto"> <!--alt serve para escrever uma frase alternativa para caso a imagem se corrompa-->
+        </div>
+    </main>
+    <footer class="rodape">
+        <p> Desenvolvido por Rafaella Lacava</p>
+    </footer>
+</body>
