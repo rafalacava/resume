@@ -170,19 +170,22 @@ a {
     color: var(--cor-texto);
 }
 
-@media (max-width: 480px) {    /*media serve para modificar o layout a partir de alguma especificação, nesse caso o max-width da tela */
+@media (max-width: 479px) {    /*media serve para modificar o layout a partir de alguma especificação, nesse caso o max-width da tela */
     .apresentacao {
         flex-direction: column-reverse; /*muda o layout e a ordem dos itens para ficar a imagem acima do texto*/
     }
     .cabecalho {
         padding: 10%;
     }
+    .menu_link1, .menu_link2, .menu_link3 {
+        font-size: 1rem;
+    }
     .apresentacao_conteudo {
         width: auto;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1439px) {
     .cabecalho {
         padding: 5%;
         justify-content: right;
