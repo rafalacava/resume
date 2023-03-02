@@ -191,6 +191,9 @@ a {
     .apresentacao_conteudo {
         width: auto;
     }
+    .rodape {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 1199px) {
