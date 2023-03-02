@@ -173,6 +173,15 @@ a {
     .apresentacao {
         flex-direction: column-reverse; /*muda o layout e a ordem dos itens para ficar a imagem acima do texto*/
     }
+    .apresentacao_titulo {
+        font-size: 1.75rem;
+    }
+    .apresentacao_texto {
+        font-size: 1rem;
+    }
+    .apresentacao_subtitulo, .apresentacao_subtitulo1 {
+        font-size: 1.25rem;
+    }
     .cabecalho {
         padding: 10%;
     }
@@ -184,7 +193,7 @@ a {
     }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
     .cabecalho {
         padding: 5%;
         justify-content: right;
