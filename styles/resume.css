@@ -1,0 +1,64 @@
+.resume {
+    display: flex; /* deixa os elementos um do lado do outro dentro do elemento pai */ /* NÃO FUNCIONOU */
+    vertical-align:top ; /*alinha conforme o maior item dentro dos elementos*/
+    justify-content: space-between; /*cria um espaço entre os elementos  NÃO FUNCIONOU */
+    padding: 5% 15%;
+    gap: 5%; /* espaço entre os itens contidos no elemento pai */
+}
+
+.resume_conteudo {
+    width: 50%; /* largura */
+    display: flex;
+    flex-direction: column; /*direção do alinhamento dos itens */
+    gap: 50px;
+    align-items: center;
+}
+
+.resume_titulo {
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.resume_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.resume_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.resume_texto {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img_foto {
+    border-radius: 16px;
+    width: 80%;
+}
+
+@media (max-width: 479px) {    /*media serve para modificar o layout a partir de alguma especificação, nesse caso o max-width da tela */
+    .apresentacao {
+        flex-direction: column-reverse; /*muda o layout e a ordem dos itens para ficar a imagem acima do texto*/
+    }
+    .apresentacao_titulo {
+        font-size: 1.75rem;
+    }
+    .apresentacao_texto {
+        font-size: 1rem;
+    }
+    .apresentacao_subtitulo, .apresentacao_subtitulo1 {
+        font-size: 1.25rem;
+    }
+    .menu_link1, .menu_link2, .menu_link3 {
+        font-size: 1rem;
+    }
+    .apresentacao_conteudo {
+        width: auto;
+    }
+}
